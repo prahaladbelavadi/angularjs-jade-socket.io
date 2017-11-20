@@ -1,3 +1,7 @@
+'use strict';
+
+/* Controllers */
+
 function AppCtrl($scope, socket) {
 
   // Socket listeners
@@ -68,7 +72,7 @@ function AppCtrl($scope, socket) {
       if (!result) {
         alert('There was an error changing your name');
       } else {
-
+        
         changeName($scope.name, $scope.newName);
 
         $scope.name = $scope.newName;
